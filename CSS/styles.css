@@ -1,12 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  min-width: 100%;
+  height: 10vh;
+  background: whitesmoke;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  padding-top: 12px;
+  width: inherit;
+}
+
+.icons {
+  margin-right: 25px;
+}
+
+.location {
+  margin-left: 25px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 12px;
+  padding: 30px;
+}
+
+section{
+  height: 75vh;
+  background-color: gray;
+  margin-top: 65px;
+}
