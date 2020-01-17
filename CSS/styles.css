@@ -1,17 +1,23 @@
+@font-face {
+  src: url(fonts/OpenSans-Regular.ttf);
+  font-family: OpenSans-Regular
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
-  background-color: #f8f8f8;
-  background: linear-gradient(to top, #f8f8f8 100%, #fcfcfc 0);
+  font-family: OpenSans-Regural;
+  font-size: .9rem;
+  background-color: #e9ecef;
+  background: linear-gradient(to top, #e9ecef 100%, white 0%);
 }
 
 header {
   position: fixed;
   min-width: 100%;
   height: 10vh;
+  background-color: white;
 }
 
 .header-container {
@@ -34,17 +40,85 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 12px;
-  padding: 30px;
+  padding: 50px;
 }
 
 section{
-  height: 75vh;
   margin-top: 65px;
+  padding: 20px;
 }
 
 .get-premium {
   box-sizing: border-box;
-  box-shadow:
+  height: 20vh;
+  border-radius: 8px;
+  background-color: white;
+  padding: 15px;
+  width: 70%;
+  box-shadow: 5px 5px 10px #888888;
+}
 
+img.profiles {
+  display: inline-block;
+  width: 40px;
+  border-radius: 8px;
+}
 
+.profile > p {
+  display: inline-block;
+  margin: 0;
+}
+
+.profile > a.profiles, p {
+  display: inline-block;
+  vertical-align: top;
+}
+
+button {
+  border: none;
+  border-radius: 9px;
+  height: 30px;
+  width: 75%;
+  color: white;
+  background-color: #4E50B8;
+  cursor: pointer;
+}
+
+.links {
+  margin-top: 45px
+}
+
+.links-text {
+  text-decoration: none;
+  color: #414464;
+  margin-left: 12px;
+  font-weight: bolder;
+}
+
+figure {
+  background-color: #4E50B8;
+  padding: 12px;
+  margin: 0;
+  border-radius: 9px;
+  width: 75%;
+  box-shadow: 5px 5px 10px #888888;
+}
+
+figure {
+  position: relative;
+}
+
+figure > img, figcaption {
+  display: inline-block;
+  vertical-align: top;
+}
+figcaption {
+  color: white
+}
+
+figure .link-icon {
+  color: white;
+  position: absolute;
+  left: 95%;
+  bottom: 30%;
 }
