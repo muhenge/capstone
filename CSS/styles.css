@@ -122,3 +122,20 @@ figure .link-icon {
   left: 95%;
   bottom: 30%;
 }
+
+.other-users {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.user-pic {
+  position: relative;
+}
+
+.user-pic-emoji {
+  display: flex;
+  position: absolute;
+  left: 30%;
+  bottom: 10%;
+}
