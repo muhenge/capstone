@@ -10,7 +10,7 @@ body {
   font-family: OpenSans-Regural, sans-serif;
   font-size: 0.9rem;
   background-color: #e9ecef;
-  background-color: linear-gradient(to top, #e9ecef 100%, white 0%);
+  background-color: -moz-linear-gradient(top, #e9ecef, white 0%);
 }
 
 header {
@@ -54,7 +54,7 @@ section {
   border-radius: 8px;
   background-color: white;
   padding: 15px;
-  width: 70%;
+  width: 90%;
   box-shadow: 5px 5px 10px #888;
 }
 
@@ -138,4 +138,8 @@ figure .link-icon {
   position: absolute;
   left: 30%;
   bottom: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+
 }
