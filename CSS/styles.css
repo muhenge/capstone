@@ -1,16 +1,16 @@
 @font-face {
   src: url(fonts/OpenSans-Regular.ttf);
-  font-family: OpenSans-Regular
+  font-family: OpenSans-Regular;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: OpenSans-Regural;
-  font-size: .9rem;
+  font-family: OpenSans-Regural, sans-serif;
+  font-size: 0.9rem;
   background-color: #e9ecef;
-  background: linear-gradient(to top, #e9ecef 100%, white 0%);
+  background-color: linear-gradient(to top, #e9ecef 100%, white 0%);
 }
 
 header {
@@ -23,7 +23,7 @@ header {
 .header-container {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   padding-top: 12px;
   width: inherit;
 }
@@ -43,7 +43,7 @@ main {
   padding: 50px;
 }
 
-section{
+section {
   margin-top: 65px;
   padding: 20px;
 }
@@ -55,7 +55,7 @@ section{
   background-color: white;
   padding: 15px;
   width: 70%;
-  box-shadow: 5px 5px 10px #888888;
+  box-shadow: 5px 5px 10px #888;
 }
 
 img.profiles {
@@ -64,14 +64,15 @@ img.profiles {
   border-radius: 8px;
 }
 
+.profile > a.profiles,
+p {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .profile > p {
   display: inline-block;
   margin: 0;
-}
-
-.profile > a.profiles, p {
-  display: inline-block;
-  vertical-align: top;
 }
 
 button {
@@ -80,12 +81,12 @@ button {
   height: 30px;
   width: 75%;
   color: white;
-  background-color: #4E50B8;
+  background-color: #4e50b8;
   cursor: pointer;
 }
 
 .links {
-  margin-top: 45px
+  margin-top: 45px;
 }
 
 .links-text {
@@ -96,24 +97,23 @@ button {
 }
 
 figure {
-  background-color: #4E50B8;
+  background-color: #4e50b8;
   padding: 12px;
   margin: 0;
   border-radius: 9px;
   width: 75%;
-  box-shadow: 5px 5px 10px #888888;
-}
-
-figure {
+  box-shadow: 5px 5px 10px #888;
   position: relative;
 }
 
-figure > img, figcaption {
+figure > img,
+figcaption {
   display: inline-block;
   vertical-align: top;
 }
+
 figcaption {
-  color: white
+  color: white;
 }
 
 figure .link-icon {
