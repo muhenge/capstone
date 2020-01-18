@@ -48,7 +48,8 @@ section {
   padding: 20px;
 }
 
-.get-premium {
+.get-premium,
+.purchase {
   box-sizing: border-box;
   height: 20vh;
   border-radius: 8px;
@@ -87,6 +88,11 @@ button {
 
 .links {
   margin-top: 45px;
+}
+
+.links a {
+  display: block;
+  line-height: 30px;
 }
 
 .links-text {
@@ -140,6 +146,74 @@ figure .link-icon {
   bottom: 10%;
 }
 
-@media only screen and (max-width: 768px) {
+img.profiles,
+span#pop-text {
+  display: inline;
+  vertical-align: middle;
+}
 
+.search {
+  margin-top: 35px;
+  display: flex;
+  box-shadow: 5px 5px 10px #888;
+  padding: 15px;
+  border-radius: 9px;
+  width: 80%;
+  background-color: white;
+}
+
+.names {
+  box-sizing: border-box;
+  margin-top: 35px;
+  border-radius: 8px;
+  background-color: white;
+  padding: 15px;
+  width: 90%;
+  box-shadow: 5px 5px 10px #888;
+}
+
+img.profiles:hover {
+  display: inline-block;
+  width: 350px;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  section#section-two {
+    order: 1;
+    width: 100%;
+  }
+
+  section#section-one {
+    order: 3;
+  }
+
+  section#section-three {
+    order: 2;
+    position: relative;
+    bottom: 155px;
+    left: 97px;
+  }
+
+  .links > a {
+    display: inline-block;
+  }
+
+  .links > a > span {
+    display: none;
+  }
+
+  figure,
+  .get-premium,
+  .purchase,
+  .search,
+  .user-pic-emoji {
+    display: none;
+  }
 }
