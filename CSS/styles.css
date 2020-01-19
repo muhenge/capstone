@@ -14,8 +14,7 @@ body {
 }
 
 header {
-  position: fixed;
-  min-width: 100%;
+  min-width: auto;
   background-color: white;
 }
 
@@ -35,6 +34,11 @@ header {
   margin-left: 25px;
 }
 
+.gray {
+  color: #414464;
+  background: indigo;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -50,11 +54,11 @@ section {
 .get-premium,
 .purchase {
   box-sizing: border-box;
-  height: 20vh;
+  height: auto;
   border-radius: 8px;
   background-color: white;
   padding: 15px;
-  width: 90%;
+  width: auto;
   box-shadow: 5px 5px 10px #888;
 }
 
@@ -136,6 +140,7 @@ figure .link-icon {
 
 .user-pic {
   position: relative;
+  margin-top: 27px;
 }
 
 .user-pic-emoji {
@@ -171,7 +176,7 @@ span#pop-text {
   box-shadow: 5px 5px 10px #888;
 }
 
-img.profiles:hover {
+img.top:hover {
   display: inline-block;
   width: 150px;
   border-radius: 8px;
