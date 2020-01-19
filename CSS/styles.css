@@ -26,6 +26,11 @@ header {
   width: inherit;
 }
 
+a.search {
+  text-decoration: none;
+  color: black;
+}
+
 .icons {
   margin-right: 25px;
 }
@@ -36,7 +41,6 @@ header {
 
 .gray {
   color: #414464;
-  background: indigo;
 }
 
 main {
@@ -82,20 +86,59 @@ p {
 button {
   border: none;
   border-radius: 9px;
-  height: 30px;
-  width: 75%;
+  height: auto;
+  width: auto;
   color: white;
   background-color: #4e50b8;
   cursor: pointer;
+  padding: 9px 20px 9px 20px;
 }
 
 .links {
   margin-top: 45px;
 }
 
+.search {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 75px;
+}
+
 .links a {
   display: block;
   line-height: 30px;
+}
+
+a.view-other {
+  height: auto;
+  width: auto;
+  background-color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  border-radius: 9px;
+  padding: 9px 20px 9px 20px;
+  margin-bottom: 32px;
+  text-decoration: none;
+  color: black;
+}
+
+a.view-other:hover {
+  background-color: #414464;
+  color: white;
+}
+
+small {
+  color: #414464;
+}
+
+.communicate > img,
+p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.communicate {
+  margin-top: 35px;
 }
 
 .links-text {
@@ -172,8 +215,12 @@ span#pop-text {
   border-radius: 8px;
   background-color: white;
   padding: 15px;
-  width: 90%;
+  width: auto;
   box-shadow: 5px 5px 10px #888;
+}
+
+.more {
+  display: none;
 }
 
 img.top:hover {
@@ -216,18 +263,22 @@ img.top:hover {
   section#section-three {
     order: 2;
     position: relative;
-    width: 75%;
     margin: -95px 0 0 0;
     display: block;
   }
 
   .names {
-    margin: 0 0 0 76px;
+    margin: 0 auto 0 auto;
     max-width: 75%;
   }
 
   .other-info {
     display: none;
+  }
+
+  .more {
+    display: block;
+    margin: 0 35px 0 75px;
   }
 
   .links > a {
