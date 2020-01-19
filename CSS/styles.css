@@ -179,26 +179,56 @@ img.profiles:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .header-container {
+   display: none;
+  }
+
   main {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   section#section-two {
     order: 1;
-    width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+
+  .user-pic img {
+    max-width: 100%;
   }
 
   section#section-one {
     order: 3;
+    max-width: 100%;
+   
   }
 
   section#section-three {
     order: 2;
     position: relative;
-    bottom: 155px;
-    left: 97px;
+  }
+
+  .names {
+    width: 50%;
+  }
+
+  .other-users {
+   
+  }
+
+  .other-info {
+    display: none;
   }
 
   .links > a {
@@ -215,5 +245,9 @@ img.profiles:hover {
   .search,
   .user-pic-emoji {
     display: none;
+  }
+
+  .user-pic {
+    max-width: inherit;
   }
 }
