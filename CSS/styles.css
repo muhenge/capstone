@@ -192,7 +192,7 @@ img.profiles:hover {
   main {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    
     max-width: 100%;
     padding: 0;
     margin: 0;
@@ -201,6 +201,7 @@ img.profiles:hover {
   section#section-two {
     order: 1;
     max-width: 100%;
+    position: relative;
   }
 
   .user-pic img {
@@ -216,15 +217,14 @@ img.profiles:hover {
   section#section-three {
     order: 2;
     position: relative;
-    bottom: 250px;
-    left: 70px;
-    max-width: 50%;
+  }
+
+  .names {
+    width: 50%;
   }
 
   .other-users {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+   
   }
 
   .other-info {
