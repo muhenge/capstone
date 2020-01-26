@@ -188,9 +188,32 @@ figure .link-icon {
 
 .user-pic-emoji {
   display: flex;
+  justify-content: space-between;
   position: absolute;
-  left: 30%;
+  width: auto;
+  left: 10%;
   bottom: 10%;
+}
+
+.left i {
+  opacity: 1;
+  color: white;
+}
+
+.right i {
+  color: white;
+}
+
+.user-pic-emoji i {
+  color: white;
+}
+
+.left {
+  margin-right: 150px;
+}
+
+.right {
+  margin-left: 150px;
 }
 
 img.profiles,
