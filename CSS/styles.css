@@ -3,6 +3,15 @@
   font-family: OpenSans-Regular;
 }
 
+font-face {
+  font-family: 'Fredoka One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fredoka One'), local('FredokaOne-Regular'), url(https://fonts.gstatic.com/s/fredokaone/v7/k3kUo8kEI-tA1RRcTZGmTlHGCac.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 html,
 body {
   padding: 0;
@@ -26,6 +35,24 @@ header {
   width: inherit;
 }
 
+.swip,
+.ex {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2.2rem;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.swip {
+  color: #4e50b8;
+}
+
+.ex {
+  color: #f0916e;
+}
+
 small {
   color: #414464;
 }
@@ -37,9 +64,14 @@ a.search {
 
 .icons {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
   margin-right: 25px;
+}
+
+.location i {
+  font-size: 1rem;
+  color: #414464;
 }
 
 .head-icons {
@@ -67,15 +99,15 @@ section {
 }
 
 section#section-one {
-  padding: 45px;
+  padding: 15px;
 }
 
 section#section-two {
-  padding: 45px;
+  padding: 15px;
 }
 
 section#section-three {
-  padding: 45px;
+  padding: 15px;
 }
 
 .get-premium,
@@ -85,7 +117,7 @@ section#section-three {
   border-radius: 8px;
   background-color: white;
   padding: 15px;
-  width: auto;
+  max-width: 100%;
   box-shadow: 5px 5px 10px #888;
 }
 
@@ -113,8 +145,7 @@ p {
 button {
   border: none;
   border-radius: 9px;
-  height: auto;
-  width: auto;
+  display: inline-block;
   color: white;
   background-color: #4e50b8;
   cursor: pointer;
@@ -129,6 +160,21 @@ button {
   display: block;
   line-height: 30px;
 }
+
+.premium-icon {
+  color: #f0916e;
+}
+
+.profile,
+.premium-names {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* .premium-names > p,
+.premium-names > small {
+  display: block;
+} */
 
 a.view-other {
   height: auto;
@@ -277,10 +323,9 @@ img.top:hover {
     grid-gap: 20px;
     padding: 20px;
     height: fit-content;
+}
 
-  }
-
-  /* section#section-one {
+  /*  section#section-one {
     padding: 0;
   } */
 
@@ -291,6 +336,9 @@ img.top:hover {
   /* section#section-three {
     padding: 0;
     background-color: blueviolet;
+  } */
+  /* .user-images {
+    width: 50%;
   } */
 
   .user-pic {
