@@ -292,7 +292,6 @@ span#pop-text {
   box-shadow: 5px 5px 10px #888;
   padding: 15px;
   border-radius: 9px;
-  width: 80%;
   background-color: white;
 }
 
@@ -306,6 +305,29 @@ span#pop-text {
   box-shadow: 5px 5px 10px #888;
 }
 
+/* .pop-text {
+  max-width: 75%;
+}
+
+img.crown,
+.pop-text {
+  display: inline-block;
+}
+
+.purchase > img.cworn, 
+.pop-text {
+  vertical-align: middle;
+} */
+.pop-purchase {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.pop-text {
+  line-height: 12px;
+}
 .more {
   display: none;
 }
