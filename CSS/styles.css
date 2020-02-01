@@ -89,8 +89,8 @@ a.search {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 12px;
-  padding: 100px;
+  grid-gap: 100px;
+  padding: 0 150px 0 150px;
 }
 
 section {
@@ -117,7 +117,6 @@ section#section-three {
   border-radius: 8px;
   background-color: white;
   padding: 15px;
-  max-width: 100%;
   box-shadow: 5px 5px 10px #888;
 }
 
@@ -621,5 +620,5 @@ input#msg {
 }
 
 .fa-paperclip {
-  color: red;
+  color: grey;
 }
