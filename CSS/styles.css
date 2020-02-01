@@ -550,6 +550,7 @@ section#section-chat {
   flex-direction: column;
   justify-content: space-around;
   padding: 55px;
+  background-color: #f7f7f7
 }
 
 .receiver {
@@ -601,7 +602,6 @@ input#msg {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 12px;
   position: absolute;
   bottom: 0;
   width: 70%;
@@ -618,4 +618,8 @@ input#msg {
   border: 1px solid #414464;
   border-radius: 9px;
   height: 25px;
+}
+
+.fa-paperclip {
+  color: red;
 }
