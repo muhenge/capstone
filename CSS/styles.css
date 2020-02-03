@@ -141,6 +141,16 @@ p {
   margin: 0;
 }
 
+.icon-btn {
+  padding: 5px;
+}
+
+.loc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 button {
   border: none;
   border-radius: 9px;
@@ -149,6 +159,10 @@ button {
   background-color: #4e50b8;
   cursor: pointer;
   padding: 9px 20px 9px 20px;
+}
+
+button.purchase-btn {
+  width: 100%;
 }
 
 .links {
@@ -178,14 +192,16 @@ button {
 a.view-other {
   height: auto;
   width: auto;
-  background-color: whitesmoke;
+  background-color: rgb(236, 230, 230);
   border: none;
   cursor: pointer;
   border-radius: 9px;
   padding: 9px 20px 9px 20px;
-  margin-bottom: 32px;
   text-decoration: none;
   color: black;
+  position: relative;
+  left: 20%;
+  top: 50%;
 }
 
 a.view-other:hover {
@@ -302,6 +318,20 @@ span#pop-text {
   padding: 15px;
   width: auto;
   box-shadow: 5px 5px 10px #888;
+}
+
+.link-to-next {
+  margin: 12px 0 12px 0;
+}
+
+.names small {
+  display: block;
+}
+
+.communicate {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
 }
 
 /* .pop-text {
@@ -426,9 +456,6 @@ img.top:hover {
     max-width: 75%;
   }
 
-  .other-info {
-    display: none;
-  }
 
   .more {
     display: block;
