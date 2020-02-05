@@ -192,17 +192,18 @@ button.purchase-btn {
 
 a.view-other {
   height: auto;
-  width: auto;
   background-color: rgb(236, 230, 230);
   border: none;
   cursor: pointer;
   border-radius: 9px;
-  padding: 9px 20px 9px 20px;
+  padding: 9px 59px 9px 57px;
   text-decoration: none;
   color: black;
-  position: relative;
+  width: 100%;
+
+  /* position: relative;
   left: 20%;
-  top: 50%;
+  top: 50%; */
 }
 
 a.view-other:hover {
@@ -267,7 +268,6 @@ figure .link-icon {
 .user-pic {
   position: relative;
   margin-top: 27px;
-  
   height: auto;
 }
 
@@ -361,14 +361,19 @@ img.crown,
 .pop-text {
   line-height: 12px;
 }
-.more {
-  display: none;
-}
 
 img.top:hover {
   display: inline-block;
   width: 150px;
   border-radius: 8px;
+}
+
+footer {
+  display: none;
+}
+
+.hr {
+  display: none;
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -414,8 +419,12 @@ img.top:hover {
     grid-gap: 30px;
     margin-right: 25px;
   }
-}
 
+  footer {
+    display: none;
+  }
+}
+/* from ipad to mobile screens */
 @media only screen and (max-width: 768px) {
   html,
   body {
@@ -460,17 +469,12 @@ img.top:hover {
     max-width: 75%;
   }
 
-
-  .more {
-    display: block;
-    margin: 0 35px 0 75px;
-  }
-
-  .links > a {
-    display: inline-block;
-  }
-
-  .links > a > span {
+  .location-next,
+  .interest,
+  .languages,
+  .link-to-next,
+  .communicate,
+  .communicate-gift {
     display: none;
   }
 
@@ -485,6 +489,74 @@ img.top:hover {
   .purchase,
   .search,
   .user-pic-emoji {
+    display: none;
+  }
+
+  .links {
+    display: none;
+  }
+
+  footer {
+    display: block;
+    padding: 35px 35px 40px 35px;
+    background-color: white;
+    margin-top: 35px;
+    position: relative;
+  }
+
+  /* .footer-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #101016;
+    max-width: 40%;
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #101016;
+    max-width: 40%;
+    float: right;
+  } */
+
+
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .footer-dots {
+    background-color: #4e50b8;
+    display: inline-block;
+    padding: 12px;
+    border-radius: 10px;
+    position: absolute;
+    left: 45%;
+    bottom: 60%;
+  }
+
+  .more {
+    position: absolute;
+    left: 45%;
+    bottom: 25%;
+  }
+
+  .fa-braille {
+    color: white;
+  }
+
+  .fa-search,
+  .fa-map-marked,
+  .fa-comments,
+  .fa-user {
+    color: #414464;
+  }
+
+  section#section-one {
     display: none;
   }
 
