@@ -35,6 +35,25 @@ header {
   width: inherit;
 }
 
+.linked {
+  line-height: 45px;
+  margin: 35px 0 12px 0;
+}
+
+.linking {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+}
+
+.linking > * {
+  color: #414464;
+}
+
+.linking span a {
+  text-decoration: none;
+  color: #414464;
+}
+
 .swip,
 .ex {
   font-family: 'Fredoka One', cursive;
