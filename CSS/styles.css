@@ -84,8 +84,47 @@ a.search {
 .icons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-gap: 10px;
   margin-right: 25px;
+}
+
+.middle-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.fa-heart {
+  color: white;
+}
+
+.fa-times {
+  color: white;
+}
+
+
+.heart-icon {
+  background-color: #4e50b8;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.x {
+  background-color: #f0916e;
+  padding: 17px;
+  border-radius: 10px;
+}
+
+a.left,
+a.right {
+  background-color: white;
+  padding: 0 12px 0 12px;
+  border-radius: 12px;
+}
+
+.fa-angle-right,
+.fa-angle-left {
+  color: #414464;
 }
 
 .location i {
