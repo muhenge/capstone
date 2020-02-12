@@ -35,6 +35,9 @@ header {
   width: inherit;
 }
 
+.menu {
+  display: none;
+}
 .linked {
   line-height: 45px;
   margin: 35px 0 12px 0;
@@ -148,7 +151,6 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 100px;
-  padding: 0 150px 0 150px;
 }
 
 section {
@@ -157,16 +159,16 @@ section {
 }
 
 section#section-one {
-  padding: 15px;
+  padding-left: 158px;
 }
 
 section#section-two {
-  padding: 15px;
+  /* padding: 15px; */
   height: auto;
 }
 
 section#section-three {
-  padding: 15px;
+  padding-right: 158px;
 }
 
 .get-premium,
@@ -185,8 +187,14 @@ a.links-text > i > span {
 
 img.profiles {
   display: inline-block;
-  width: 40px;
+  width: 58px;
+  height: 58px;
   border-radius: 8px;
+}
+
+.profiles {
+  display: flex;
+  flex-flow: row;
 }
 
 .profile > a.profiles,
@@ -247,6 +255,18 @@ button.purchase-btn {
 .premium-names > small {
   display: block;
 } */
+
+.premium-likes {   
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button.premium-btn {
+  flex-grow: 1;
+}
 
 a.view-other {
   height: auto;
@@ -321,6 +341,7 @@ figure .link-icon {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: centerF;
 }
 
 .user-pic {
@@ -396,19 +417,6 @@ span#pop-text {
   align-items: center;
 }
 
-/* .pop-text {
-  max-width: 75%;
-}
-
-img.crown,
-.pop-text {
-  display: inline-block;
-}
-
-.purchase > img.cworn, 
-.pop-text {
-  vertical-align: middle;
-} */
 .pop-purchase {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -422,7 +430,8 @@ img.crown,
 
 img.top:hover {
   display: inline-block;
-  width: 150px;
+  width: 350px;
+  height: 350px;
   border-radius: 8px;
 }
 
@@ -434,7 +443,7 @@ footer {
   display: none;
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+/* @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -442,30 +451,9 @@ footer {
     padding: 20px;
     height: fit-content;
 }
-
-  /*  section#section-one {
-    padding: 0;
-  } */
-
   section#section-two {
     padding: 0;
   }
-
-  /* section#section-three {
-    padding: 0;
-    background-color: blueviolet;
-  } */
-  /* .user-images {
-    width: 50%;
-  } */
-
-  /* .user-pic {
-    height: fit-content;
-  } */
-
-  /* .user-pic img {
-    height: calc(50vh - 10vh);
-  } */
 
   section {
     height: fit-content;
@@ -481,13 +469,18 @@ footer {
   footer {
     display: none;
   }
-}
+} */
+
+
+
 /* from ipad to mobile screens */
 @media only screen and (max-width: 768px) {
   html,
   body {
     padding: 0;
     margin: 0;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   main {
@@ -496,6 +489,34 @@ footer {
     max-width: 100%;
     padding: 0;
     margin: 0;
+  }
+
+  .menu {
+    display: inline;
+    margin-left: 12px;
+  }
+
+  .menu button {
+    background: none;
+  }
+
+  .location {
+    display: none;
+  }
+
+  .fa-bars {
+    color: #414464;
+  }
+
+  .fa-list-alt,
+  .fa-user-circle {
+    display: none;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   section#section-two {
@@ -556,10 +577,9 @@ footer {
 
   footer {
     display: block;
-    padding: 35px 35px 40px 35px;
-    background-color: white;
-    margin-top: 35px;
     position: relative;
+    margin: 35px 0 0 0;
+    background-color: white;
   }
 
   /* .footer-left {
@@ -585,12 +605,14 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-content: flex-start;
+    max-width: 100%;
+    padding: 35px;
   }
 
   .footer-dots {
     background-color: #4e50b8;
     display: inline-block;
-    padding: 12px;
+    padding: 15px;
     border-radius: 10px;
     position: absolute;
     left: 45%;

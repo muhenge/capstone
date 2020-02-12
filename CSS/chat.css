@@ -1,4 +1,8 @@
 main {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 1fr 2fr;
+}
+
+section#section-chat {
+  padding-right: 35px;
 }
