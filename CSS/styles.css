@@ -646,6 +646,7 @@ footer {
 }
 
 /* chat style */
+
 section#section-chat {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -731,7 +732,7 @@ section#section-chat {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 55px;
+  padding: 57px 57px 183px 57px;
   background-color: #f7f7f7
 }
 
