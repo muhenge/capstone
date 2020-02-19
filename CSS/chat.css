@@ -3,6 +3,3 @@ main {
   grid-template-columns: 1fr 2fr;
 }
 
-section#section-chat {
-  padding-right: 35px;
-}
