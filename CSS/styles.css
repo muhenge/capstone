@@ -735,7 +735,8 @@ footer {
   .names {
     margin: 0 auto 0 auto; 
     max-width: 65%;
-    box-shadow: 60px -27px 0 13px #4e50b8;
+    box-shadow: 0 -53px 0 -30px #4e50b8;
+    border-radius: 10px;
   }
 
   .location-next,
