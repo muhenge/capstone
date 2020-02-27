@@ -155,7 +155,7 @@ main {
 
 section {
   margin-top: 65px;
-  padding: 20px;
+  max-width: 100%;
 }
 
 section#section-one {
@@ -163,7 +163,6 @@ section#section-one {
 }
 
 section#section-two {
-  /* padding: 15px; */
   height: auto;
 }
 
@@ -254,7 +253,7 @@ button.premium-btn {
 
 a.view-other {
   height: auto;
-  background-color: rgb(236, 230, 230);
+  background-color: rgb(236, 230, 230);d
   border: none;
   cursor: pointer;
   border-radius: 9px;
@@ -675,6 +674,7 @@ footer {
   section#section-two {
     order: 1;
     margin: 0 0 -255px;
+    padding: 35px;
   }
 
   .other-users {
@@ -717,7 +717,7 @@ footer {
   .links {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-content: stretch;
   }
 
   figure,
