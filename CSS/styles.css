@@ -151,6 +151,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 50px;
+  padding: 0 100px 0 100px;
 }
 
 section {
@@ -158,16 +159,15 @@ section {
   max-width: 100%;
 }
 
-section#section-one {
-  padding-left: 158px;
+.n-likes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  align-items: center;
 }
 
 section#section-two {
   height: auto;
-}
-
-section#section-three {
-  padding-right: 158px;
 }
 
 .get-premium,
@@ -253,7 +253,7 @@ button.premium-btn {
 
 a.view-other {
   height: auto;
-  background-color: rgb(236, 230, 230);d
+  background-color: rgb(236, 230, 230);
   border: none;
   cursor: pointer;
   border-radius: 9px;
@@ -261,10 +261,6 @@ a.view-other {
   text-decoration: none;
   color: black;
   width: 100%;
-
-  /* position: relative;
-  left: 20%;
-  top: 50%; */
 }
 
 a.view-other:hover {
