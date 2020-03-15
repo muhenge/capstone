@@ -735,12 +735,15 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: flex-start;
     max-width: 100%;
     padding: 35px;
+    align-items: flex-end;
   }
 
-  .footer-dots {
+  .footer-dots{
+    align-self: flex-start;
+  }
+  /* .footer-dots {
     background-color: #4e50b8;
     display: inline-block;
     padding: 15px;
@@ -748,7 +751,7 @@ footer {
     position: absolute;
     left: 45%;
     bottom: 60%;
-  }
+  } */
 
   .fa-braille {
     color: white;
