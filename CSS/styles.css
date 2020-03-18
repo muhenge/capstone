@@ -240,7 +240,7 @@ button.premium-btn {
   align-items: center;
 }
 
-.premium-likes {   
+.premium-likes {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-gap: 10px;
@@ -538,29 +538,21 @@ footer {
   }
 
   footer {
-    display: block;
+    /* display: block; */
     position: relative;
-    margin: 35px 0 0 0;
-    background-color: white;
-  }
+    /* margin: 35px 0 0 0;
+    background-color: white; */
+  } 
 
   .footer-icons {
     display: flex;
+    align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
-    align-content: flex-start;
     max-width: 100%;
-    padding: 35px;
-  }
-
-  .footer-dots {
-    background-color: #4e50b8;
-    display: inline-block;
-    padding: 15px;
-    border-radius: 10px;
     position: absolute;
-    left: 45%;
-    bottom: 60%;
+    top: 0;
+    background-color: white;
   }
 
   .more {
@@ -587,7 +579,7 @@ footer {
   .user-pic {
     max-width: inherit;
   }
-} 
+}
 
 @media only screen and (min-width: 320px) and (max-width: 620px) {
  img.top {
@@ -655,8 +647,8 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;  
-    
+    flex-wrap: nowrap;
+
   }
 
   a img.top {
@@ -679,7 +671,7 @@ footer {
   }
 
   .names {
-    margin: 0 auto 0 auto; 
+    margin: 0 auto 0 auto;
     max-width: 65%;
     box-shadow: 0 -28px 0 -5px #4e50b8;
     border-radius: 10px;
@@ -720,12 +712,14 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     max-width: 100%;
+    align-items: center;
     padding: 35px;
-    align-items: flex-end;
   }
 
-  .footer-dots{
-    align-self: flex-start;
+  .footer-dots {
+    position: absolute;
+    bottom: 70%;
+    left: 45%;
   }
 
   .fa-braille {
