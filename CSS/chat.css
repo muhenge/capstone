@@ -8,10 +8,10 @@ main {
     padding: 0;
     margin: 0;
   }
+
   main {
     display: block;
     max-width: 100%;
-    /* padding: 35px; */
   }
 
   section#section-chat {
