@@ -750,7 +750,7 @@ footer {
     border-radius: 10px;
     height: 25vh;
     padding: 12px 0 0 0;
-    background-color: rgb(247, 247, 252);;
+    background-color: rgb(247, 247, 252);
   }
 
   .next-names {
@@ -925,6 +925,12 @@ footer {
 }
 
 /* -------------------- Chat section style-------------------------------------------- */
+main#main-chat {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 50px;
+  padding: 0 12px 0 55px;
+}
 
 section#section-chat {
   display: grid;
