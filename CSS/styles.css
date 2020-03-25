@@ -682,6 +682,19 @@ footer {
 
   .next-names {
     margin: 0 0 55px 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  .add {
+    padding-right: 15px;
+  }
+
+  .fa-user-plus {
+    color: indianred;
   }
 
   .more {
@@ -690,6 +703,12 @@ footer {
     margin: 0;
     text-align: center;
     border-top: 0.1em solid rgba(100, 100, 102, 0.3);
+  }
+
+  .fa-circle {
+    height: 5px;
+    color: green;
+    align-self: center;
   }
 
   .location-next,
@@ -852,13 +871,40 @@ footer {
     max-width: 65%;
     box-shadow: 0 -11px 0 -6px #4e50b8;
     border-radius: 10px;
-    height: 30vh;
+    height: 15vh;
+    padding: 12px 0 0 0;
+    background-color: rgb(247, 247, 252);;
+  }
+
+  .next-names {
+    margin: 0 0 55px 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  .add {
+    padding-right: 15px;
+  }
+
+  .fa-user-plus {
+    color: indianred;
   }
 
   .more {
-    padding: 0;
-    position: absolute;
-    left: 45%;
+    color: rgba(100, 100, 102, 0.9);
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    border-top: 0.1em solid rgba(100, 100, 102, 0.3);
+  }
+
+  .fa-circle {
+    height: 5px;
+    color: green;
+    align-self: center;
   }
 
   .location-next,
