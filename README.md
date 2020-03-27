@@ -29,13 +29,19 @@
 ![screenshot](screenshots/chat-lg);
 
 
-## Built With and tools used
+## Built With
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML),
-- [CSS](https://www.w3schools.com/css/),
-- [Fontawesome](https://fontawesome.com/)
-- [Node](https://nodejs.org/en/)
-- [Material icons](https://material.io/resources/icons/)
+- [CSS](https://www.w3schools.com/css/).
+
+## Tools used
+
+- [Fontawesome](https://fontawesome.com/),
+- [Node](https://nodejs.org/en/),
+- [Material icons](https://material.io/resources/icons/),
+- [stickler](https://stickler-ci.com/),
+- [HTML validator](https://validator.w3.org/),
+- [Git](https://git-scm.com/).
 
 ## Live Demo
 
