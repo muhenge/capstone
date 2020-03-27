@@ -660,7 +660,7 @@ footer {
 }
 
 /* from mobiles to tablets */
-@media only screen and (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
   html,
   body {
     padding: 0;
@@ -673,7 +673,7 @@ footer {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    padding: 12px;
+    padding: 50px;
     margin: 0;
   }
 
@@ -725,12 +725,12 @@ footer {
   }
 
   a img.top {
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
   }
 
   .user-pic img {
-    max-width: 100%;
+    width: 1024px;
   }
 
   section#section-one {
@@ -856,7 +856,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1326px) {
+/* @media only screen and (min-width: 1024px) and (max-width: 1326px) {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -887,7 +887,7 @@ footer {
     width: 55px;
     height: 55px;
   }
-}
+} */
 
 /* 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1059,7 +1059,7 @@ input#msg {
 
 /*  ----------- media screen for chat.html -------------- */
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
   body {
     padding: 0;
     margin: 0;
@@ -1102,3 +1102,5 @@ input#msg {
     display: none;
   }
 }
+
+/* ---------------------chat page ------------------------- */
