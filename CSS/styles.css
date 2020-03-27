@@ -57,6 +57,15 @@ header {
   color: #414464;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
+.links a {
+  display: block;
+  line-height: 30px;
+}
+
 .linking span a {
   text-decoration: none;
   color: #414464;
@@ -66,10 +75,6 @@ header {
 .ex {
   font-family: "Fredoka One", cursive;
   font-size: 2.2rem;
-}
-
-.logo a {
-  text-decoration: none;
 }
 
 .swip {
@@ -82,6 +87,7 @@ header {
 
 small {
   color: #414464;
+  display: block;
 }
 
 a.search {
@@ -119,7 +125,6 @@ a.search {
 .x {
   background-color: #f0916e;
   padding: 17px;
-  /* border-radius: 10px; */
 }
 
 a.left,
@@ -172,6 +177,7 @@ section {
 
 section#section-two {
   height: auto;
+  margin: 65px 20px 0 20px;
 }
 
 .get-premium,
@@ -229,11 +235,6 @@ button.premium-btn {
   margin-top: 45px;
 }
 
-.links a {
-  display: block;
-  line-height: 30px;
-}
-
 .premium-icon {
   color: #f0916e;
 }
@@ -272,9 +273,10 @@ a.view-other:hover {
   color: white;
 }
 
-small {
-  color: #414464;
-  display: block;
+figure > img,
+figcaption {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .communicate > img,
@@ -285,6 +287,9 @@ p {
 
 .communicate {
   margin-top: 35px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
 }
 
 .links-text {
@@ -329,12 +334,6 @@ figure {
   position: relative;
 }
 
-figure > img,
-figcaption {
-  display: inline-block;
-  vertical-align: top;
-}
-
 figcaption {
   color: white;
 }
@@ -342,7 +341,7 @@ figcaption {
 .add,
 .more {
   display: none;
-} 
+}
 
 .name {
   margin-bottom: 12px;
@@ -423,12 +422,6 @@ span#pop-text {
 
 .link-to-next {
   text-align: center;
-}
-
-.communicate {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  align-items: center;
 }
 
 .pop-purchase {
@@ -546,9 +539,9 @@ footer {
     max-width: 65%;
     box-shadow: 0 -11px 0 -6px #4e50b8;
     border-radius: 10px;
-    height: 15vh;
+    height: 25vh;
     padding: 12px 0 0 0;
-    background-color: rgb(247, 247, 252);;
+    background-color: rgb(247, 247, 252);
   }
 
   .next-names {
@@ -659,7 +652,7 @@ footer {
 }
 
 /* from mobiles to tablets */
-@media only screen and (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
   html,
   body {
     padding: 0;
@@ -672,7 +665,7 @@ footer {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    padding: 12px;
+    padding: 50px;
     margin: 0;
   }
 
@@ -724,12 +717,12 @@ footer {
   }
 
   a img.top {
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
   }
 
   .user-pic img {
-    max-width: 100%;
+    width: 1024px;
   }
 
   section#section-one {
@@ -748,9 +741,9 @@ footer {
     max-width: 65%;
     box-shadow: 0 -11px 0 -6px #4e50b8;
     border-radius: 10px;
-    height: 15vh;
+    height: 25vh;
     padding: 12px 0 0 0;
-    background-color: rgb(247, 247, 252);;
+    background-color: rgb(247, 247, 252);
   }
 
   .next-names {
@@ -855,75 +848,12 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1326px) {
-  .get-premium,
-  .purchase {
-    box-sizing: border-box;
-    height: auto;
-    border-radius: 8px;
-    background-color: white;
-    padding: 15px;
-    box-shadow: 5px 5px 47px 20px #888;
-    width: inherit;
-  }
-
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    padding: 0;
-  }
-
-  section#section-one {
-    margin-left: 20px;
-  }
-
-  .premium-likes {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 1px;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 32px; */
-    width: inherit;
-  }
-
-  .n-likes {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
-  }
-
-  .purchase {
-    box-sizing: border-box;
-    height: auto;
-    border-radius: 8px;
-    background-color: white;
-    padding: 15px;
-    box-shadow: 5px 5px 47px 20px #888;
-    width: auto;
-  }
-
-  .add,
-  .more {
-    display: none;
-  }
-
-  section#section-three {
-    width: inherit;
-    margin-right: 20px;
-  }
-
-  img.top {
-    width: 55px;
-    height: 55px;
-  }
-
-  .status {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    
-  }
+/* -------------------- Chat section style-------------------------------------------- */
+main#main-chat {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 50px;
+  padding: 0 12px 0 55px;
 }
 
 section#section-chat {
@@ -961,14 +891,12 @@ input#search {
 
 .chat-messages {
   position: relative;
-  /* width: max-content; */
 }
 
 .chat-icons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 a.small-msg {
@@ -980,12 +908,26 @@ a.small-msg {
 .sender-title {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 12px;
+  border-bottom: 1px solid;
+  border-color: rgb(207, 206, 206);
 }
 
 .sender-name {
   position: relative;
-  width: 100%;
+}
+
+.msgs {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+}
+
+.img-msg img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
 }
 
 #line {
@@ -995,12 +937,6 @@ a.small-msg {
 
 span.kinya {
   display: none;
-}
-
-.sender-title {
-  padding: 12px;
-  border-bottom: 1px solid;
-  border-color: rgb(207, 206, 206);
 }
 
 .phone {
@@ -1071,3 +1007,51 @@ input#msg {
   color: grey;
   text-decoration: none;
 }
+
+/*  ----------- media screen for chat.html -------------- */
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  main#main-chat {
+    display: block;
+    max-width: 100%;
+    padding: 35px;
+  }
+
+  section#section-chat {
+    display: block;
+    width: 100%;
+    background-color: inherit;
+    margin-top: 12px;
+  }
+
+  .chat-messages {
+    display: none;
+  }
+
+  .search-chat {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 10px;
+  }
+
+  .borders {
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .chat-icons {
+    display: none;
+  }
+
+  .search-name {
+    display: none;
+  }
+}
+
+/* ---------------------chat page ------------------------- */
